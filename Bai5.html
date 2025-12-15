@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 05</title>
+</head>
+<body>
+    <form action="www.myserver.com" method="POST">
+        <label for="Họ và tên">Họ và tên:</label>
+        <input placeholder="Nguyễn Văn A" id="Họ và tên" type="text" name="Họ và tên" />
+        <br>
+        <label for="Email">Email:</label>
+        <input placeholder="NguyenVanA@gmail.com" id="email" type="email" name="Email"/>
+        <br>
+        <label for="Ngày sinh">Ngày sinh:</label>
+        <input type="date" name="Ngày sinh">
+        <br>
+        <label for="Gender">Giới tính:</label>
+        <input type="radio" name="Gender" value="Nam">
+        <label>Nam</label>
+        <input type="radio" name="Gender" value="Nữ">
+        <label>Nữ</label>
+        <br>
+        <label for="phoneNumber">Số điện thoại:</label>
+        <input placeholder="0123456789" id="phoneNumber" type="tel" name="phoneNumber" pattern="[0-9]{10}"/>
+        <br>
+        <label for="Chuyên ngành">Chuyên ngành:</label>
+        <input type="text" name="Chuyên ngành" placeholder="Công Nghệ Thông Tin" />
+        <br>
+        <label for="Năm">Năm nhập học:</label>
+        <input placeholder="2025" type="number" name="Năm" min="2000" max="2030"/>
+        <br>
+        <label for="điểm">Điểm GPA</label>
+        <input type="number" name="Điểm" min="0" max="10"/>
+        <br>
+        <label for="Address">Địa chỉ:</label>
+        <textarea name="Address" placeholder="Giáo xứ VINH SON..."></textarea>
+        <br>
+        <label for="class">Lớp học:</label>
+        <select name="Lớp học">
+            <option selected value="Lớp 1">Lớp 1</option>
+            <option value="Lớp 2">Lớp 2</option>
+            <option value="Lớp 3">Lớp 3</option>
+            <option value="Lớp 4">Lớp 4</option>
+        </select>
+        <br>
+        <label for="day">Ngày đăng ký học:</label>
+        <input type="date" name="Ngày đăng ký học">
+        <br>
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>
